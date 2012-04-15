@@ -1,0 +1,5 @@
+Player, tiles, background: (c) James from dev-zoo.net
+Gem, particles: (c) Lee Miller - http://iarke.us
+Music: (c) Kevin MacLeod - http://incompetech.com
+
+While the code released here is under MIT, the assets (images, sound, etc) are NOT released under MIT. You may use the assets of this project for personal use, but may not use them for commercial use. 

@@ -1,6 +1,7 @@
 package {
 	public class Resource {
 		[Embed(source = "/tiles.png")] public static const TILES:Class;
+		[Embed(source = "/background.png")] public static const BACKGROUND:Class;
 		[Embed(source = "/player.png")] public static const PLAYER:Class;
 		[Embed(source = "/gem.png")] public static const GEM:Class;
 		[Embed(source = "/particle.png")] public static const PARTICLE:Class;

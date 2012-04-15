@@ -6,8 +6,11 @@ package {
 
 	public class AxeliteBasic extends Ax {
 		public function AxeliteBasic() {
-			super(480, 360, new GameState);
-			Ax.background = new AxColor(149/255, 199/255, 232/255);
+			super(GameState);
+		}
+		
+		override public function create():void {
+			Ax.background = AxColor.fromHex(0x95c7e8);
 		}
 	}
 }

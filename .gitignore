@@ -4,6 +4,7 @@ bin-release
 www
 air
 docs
+dev
 .settings
 .actionScriptProperties
 .project

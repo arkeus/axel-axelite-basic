@@ -2,6 +2,7 @@ package {
 	import org.axgl.Ax;
 	import org.axgl.AxGroup;
 	import org.axgl.AxRect;
+	import org.axgl.AxSprite;
 	import org.axgl.AxState;
 	import org.axgl.collision.AxCollider;
 	import org.axgl.collision.AxCollisionGroup;
@@ -31,6 +32,10 @@ package {
 			
 			Ax.music(Resource.MUSIC);
 			
+			var background:AxSprite = new AxSprite(0, 0, Resource.BACKGROUND);
+			background.scroll.x = background.scroll.y = 0;
+			add(background);
+			
 			particles = new AxGroup;
 			add(particles);
 			
@@ -46,7 +51,7 @@ package {
 			tilemap = new AxTilemap().build(Resource.MAP_DATA, Resource.TILES, 24, 24, 3);
 			add(tilemap);
 			
-			player = new Player(24, 609, tilemap.width, tilemap.height);
+			player = new Player(24, 604, tilemap.width, tilemap.height);
 			add(player);
 			
 			gems = new AxGroup;
@@ -65,6 +70,7 @@ package {
 			
 			gemText = new AxText(10, 10, null, "Gems: 0");
 			gemText.scroll.x = gemText.scroll.y = 0;
+			gemText.scale.x = gemText.scale.y = 4;
 			add(gemText);
 			
 			TILEMAP_COLLIDER = new AxCollider;
